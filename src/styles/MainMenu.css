@@ -1,0 +1,112 @@
+.mainMenu {
+  height: 124vh;
+  width: 10px;
+  min-height: 10px;
+  background-color: #f4f5fe;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+.main-header {
+  font-size: 23px;
+  padding-top: 40px;
+  width: 80%;
+  margin: auto;
+}
+
+.main-testimonial ul {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 12px 12px;
+}
+
+.container-emoji {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.container-emoji li a {
+  text-decoration: none;
+  color: black;
+  padding: 14px 18px 14px;
+  background-color: white;
+  border-radius: 21px;
+  text-align: center;
+  width: 50%;
+}
+
+.header-items {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.actor-header {
+  font-size: 24px;
+  color: black;
+  margin: 30px;
+}
+
+.actor-Img {
+  width: 45px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.actor-description {
+  padding-left: 10px;
+  margin-right: 99px;
+}
+
+.actor-name {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+
+.des {
+  font-size: 15px;
+  color: #ced4da;
+  padding: 2px;
+}
+
+.portfolio-box {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.img-box {
+  width: 100%;
+  border-radius: 20px;
+  height: 220px;
+}
+
+.try{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.portfolio-name {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.portfolio-des{
+    font-size: 15px;
+    color: #ced4da;
+}
+
+.port{
+    font-size: 25px;
+}

@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leftMenu {
+  background-color: white;
+  color: #495057;
+  width: 21%;
+  z-index: 1;
+  height: 10vh;
+}
+
+.menu,
+tit {
+  float: right;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.logoContainer {
+  margin-top: 70px;
+}
+
+.logo {
+  width: 44%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+span {
+  color: orange;
+}
+
+.nav-box {
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.description {
+  color: #ced4da;
+  padding: 12px;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #848386;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul li:hover {
+  width: 90%;
+  padding: 13px 13px;
+  background-color: black;
+  border-radius: 9px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-bar ul li:hover > a {
+  color: white;
+}
+
+.nav-box,
+small {
+  margin-right: 11px;
+}
+
+hr {
+  margin-top: 90px;
+  border: 1px solid #e9ecef;
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.bannerImg {
+  width: 20%;
+  border-radius: 55%;
+  height: 39px;
+}
