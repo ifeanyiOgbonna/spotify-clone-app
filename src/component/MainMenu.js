@@ -18,12 +18,11 @@ function MainMenu() {
             <ul className="container-emoji">
               <li>️
                 <a href="#">
+                  <i className="emoji">❄️ </i>
                   Chill Hits
                 </a>
 
               </li>
-
-
 
               <li>
                 <a href="#" >

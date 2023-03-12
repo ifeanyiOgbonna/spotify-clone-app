@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/RightMenu.css";
 import { BiSearchAlt } from "react-icons/bi";
 import Artist from "../images/background.jpeg";
@@ -14,7 +14,44 @@ import { HiOutlineSpeakerWave } from "react-icons/hi2"
 import { IoVolumeLowOutline } from "react-icons/io5"
 
 
+const songs = [
+  {
+    title: "Priority",
+    artist: "Mos Def",
+    time: "1:25",
+    album: "The Ecstatic"
+  },
+  {
+    title: "Time Is Ticking Out",
+    artist: "The Cranberries",
+    time: "2:59",
+    album: "Wake UP And Smell T."
+  },
+  {
+    title: "One Minute More",
+    artist: "Capital Cities",
+    time: "3:23",
+    album: "In The Tidal Wave"
+  },
+  {
+    title: "Shine",
+    artist: "Johnny Drille",
+    time: "5:50",
+    album: "Johnny Music "
+  },
+  {
+    title: "Wetin",
+    artist: "Yarden",
+    time: "2:50",
+    album: "Yarden Music Records"
+  },
+]
+
+
 function RightMenu() {
+
+  const [hoveredSong, setHoveredSong] = useState()
+
   return (
     <div className="rightMenu">
       <div className="right-items">
@@ -44,7 +81,7 @@ function RightMenu() {
       </div>
 
       <div className="banner">
-        <img src={Artist} alt="artist" className="bannerImg" />
+        <img src={Artist} alt="artist" className="bannerImage" />
         <div className="content">
           <div className="breadCrumb">
             <p className="artComb">Artist</p>
@@ -88,53 +125,17 @@ function RightMenu() {
 
         <div className="table-content">
           <div className="table-component">
-            <ul>
-              <li>01</li>
-              <li>Priority</li>
-              <li>Mos Def</li>
-              <li>1:25</li>
-              <li>The Ecstatic</li>
-            </ul>
-
-            <div className="table-component">
-              <ul>
-                <div>02</div>
-                <li>Common Person</li>
-                <li>Burna Boy</li>
-                <li>2:59</li>
-                <li>Love,Damini</li>
-              </ul>
-            </div>
-
-            <div className="table-component">
-              <ul>
-                <li>03</li>
-                <li>Dreams</li>
-                <li>Boys Spyce</li>
-                <li>3:23</li>
-                <li>Folake</li>
-              </ul>
-            </div>
-
-            <div className="table-component">
-              <ul>
-                <li>04</li>
-                <li>Johnny Drille</li>
-                <li>Wait For Me</li>
-                <li>4:25</li>
-                <li>Wait For Me</li>
-              </ul>
-            </div>
-
-            <div className="table-component">
-              <ul>
-                <li>05</li>
-                <li>Johnny Drille</li>
-                <li>Home</li>
-                <li>1:25</li>
-                <li>Home</li>
-              </ul>
-            </div>
+            {songs.map((song, index) => {
+              return (
+                <ul onMouseLeave={() => setHoveredSong()} onMouseEnter={() => setHoveredSong(index)}>
+                  <li>{index === hoveredSong ? <HiOutlineSpeakerWave className="ion" /> : `0${index + 1}`}</li>
+                  <li>{song.title}</li>
+                  <li>{song.artist}</li>
+                  <li>{song.time}</li>
+                  <li>{song.album}</li>
+                </ul>
+              )
+            })}
           </div>
         </div>
       </div>

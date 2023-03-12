@@ -4,20 +4,20 @@
   box-sizing: border-box;
 }
 
-.leftMenu {
+.left-Menu {
   background-color: white;
   color: #495057;
-  width: 21%;
+  width: 281px;
   z-index: 1;
-  height: 10vh;
 }
 
 .menu,
-tit {
+icon {
   float: right;
   width: 40%;
   margin-top: 20px;
   margin-bottom: 90px;
+  cursor: pointer;
 }
 
 .logoContainer {
@@ -92,11 +92,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 30%;
 }
 
 .bannerImg {
-  width: 20%;
-  border-radius: 55%;
-  height: 39px;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
 }

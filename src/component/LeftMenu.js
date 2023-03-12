@@ -6,11 +6,11 @@ import Logo from "../images/logo.png";
 
 function LeftMenu() {
   return (
-    <div className="leftMenu">
+    <div className="left-Menu">
       <div className="menu">
-        <tit className="sign" class="material-symbols-outlined">
+        <icon className="sign" class="material-symbols-outlined">
           menu_open
-        </tit>
+        </icon>
 
 
       </div>
@@ -24,7 +24,7 @@ function LeftMenu() {
           </div>
           <ul>
             <li>
-              <a href="#Home">
+              <a href="#Home" className="active">
                 <small class="material-symbols-outlined">home</small>Home
               </a>
             </li>

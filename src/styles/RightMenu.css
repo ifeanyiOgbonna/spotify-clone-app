@@ -1,7 +1,7 @@
 /*  */
 
 .rightMenu {
-  height: 124vh;
+  height: 130vh;
   width: 30%;
   z-index: 1;
   flex-grow: 1;
@@ -87,7 +87,6 @@
   justify-content: center;
   margin-top: 30px;
   position: relative;
-  
 }
 
 .banner .content {
@@ -98,7 +97,7 @@
   bottom: 0;
 }
 
-.banner .bannerImg {
+.bannerImage {
   width: 90%;
   height: 240px;
   border-radius: 25px;
@@ -195,7 +194,7 @@
 
 .table-title {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 10px 30px;
   margin-top: 16px;
   margin-left: 39px;
@@ -206,25 +205,28 @@
   color: #ced4da;
 }
 
-.table-title .item {
+.table-title .item{
   color: #ced4da;
 }
 
-.table-component ul {
+
+.table-component ul{
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: 10px 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10px 10px;
   list-style: none;
-  padding: 8px;
+  padding: 20px 10px 20px 20px;
   font-size: 14px;
   margin-left: 31px;
 }
 
+.ion {
+  font-size: 20px;
+}
+
 .table-component ul:hover {
   background-color: white;
-  /* padding: 2px 20px; */
-  padding-top: 20px;
-  /* width: 90%; */
+  /* padding-top: 20px; */
   border-radius: 10px;
   cursor: pointer;
 }
@@ -252,7 +254,7 @@
 
 .icon {
   padding: 9px 10px;
-  background-color: #bdbdc3;
+  background-color: #F4F5FE;
   display: flex;
   border-radius: 9px;
   text-align: center;
