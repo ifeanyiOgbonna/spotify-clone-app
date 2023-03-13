@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/RightMenu.css";
-import { BiSearchAlt } from "react-icons/bi";
+import { IoSearchOutline } from "react-icons/io5";
 import Artist from "../images/background.jpeg";
 import { CiMusicNote1 } from "react-icons/ci"
 import { IoHeartOutline } from "react-icons/io5"
@@ -56,14 +56,14 @@ function RightMenu() {
     <div className="rightMenu">
       <div className="right-items">
         <div className="container-logo">
-          <i class="material-symbols-outlined">arrow_back</i>
-          <i class="material-symbols-outlined">arrow_forward</i>
+          <i className="material-symbols-outlined">arrow_back</i>
+          <i className="material-symbols-outlined">arrow_forward</i>
         </div>
 
         <div className="search-box">
           <input type="text" placeholder="Search for artist,songs add..." />
           <i className="searchIcon">
-            <BiSearchAlt />
+            <IoSearchOutline />
           </i>
         </div>
       </div>
@@ -74,7 +74,7 @@ function RightMenu() {
           <div className="container">
             <h2 className="section-hero">Trending</h2>
             <p className="more">
-              More <i class="material-symbols-outlined">keyboard_arrow_right</i>
+              More <i className="material-symbols-outlined">keyboard_arrow_right</i>
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ function RightMenu() {
           <div className="table-component">
             {songs.map((song, index) => {
               return (
-                <ul onMouseLeave={() => setHoveredSong()} onMouseEnter={() => setHoveredSong(index)}>
+                <ul key={index} onMouseLeave={() => setHoveredSong()} onMouseEnter={() => setHoveredSong(index)}>
                   <li>{index === hoveredSong ? <HiOutlineSpeakerWave className="ion" /> : `0${index + 1}`}</li>
                   <li>{song.title}</li>
                   <li>{song.artist}</li>
@@ -188,7 +188,7 @@ function RightMenu() {
           </div>
           <div className="playList">
             <div className="container-playList">
-              <p className="minute">0:43s</p>
+              <p className="minute">0:43</p>
               <input type="range" />
               <p className="minute">2:59</p>
             </div>

@@ -8,7 +8,7 @@ function LeftMenu() {
   return (
     <div className="left-Menu">
       <div className="menu">
-        <icon className="sign" class="material-symbols-outlined">
+        <icon  className="material-symbols-outlined sign">
           menu_open
         </icon>
 
@@ -25,20 +25,20 @@ function LeftMenu() {
           <ul>
             <li>
               <a href="#Home" className="active">
-                <small class="material-symbols-outlined">home</small>Home
+                <small className="material-symbols-outlined">home</small>Home
               </a>
             </li>
 
             <li>
               <a href="#Trends">
-                <small class="material-symbols-outlined">chart_data</small>
+                <small className="material-symbols-outlined">chart_data</small>
                 Trends
               </a>
             </li>
 
             <li>
               <a href="#Feed">
-                <small class="material-symbols-outlined">charger</small>Feed
+                <small className="material-symbols-outlined">charger</small>Feed
               </a>
             </li>
 
@@ -46,7 +46,7 @@ function LeftMenu() {
 
             <li>
               <a href="#New and Notable">
-                <small class="material-symbols-outlined">view_comfy_alt</small>
+                <small className="material-symbols-outlined">view_comfy_alt</small>
                 New and Notable
               </a>
             </li>
@@ -54,7 +54,7 @@ function LeftMenu() {
             <li>
               <a href="#Release Calender">
                 {" "}
-                <small class="material-symbols-outlined">calendar_month</small>
+                <small className="material-symbols-outlined">calendar_month</small>
                 Release Calendar
               </a>
             </li>
@@ -62,7 +62,7 @@ function LeftMenu() {
             <li>
               <a href="#Event">
                 {" "}
-                <small class="material-symbols-outlined">
+                <small className="material-symbols-outlined">
                   confirmation_number
                 </small>
                 Events
@@ -73,7 +73,7 @@ function LeftMenu() {
 
             <li>
               <a href="#Favorite Song">
-                <small class="material-symbols-outlined">
+                <small className="material-symbols-outlined">
                   favorite
                 </small>
 
@@ -83,13 +83,13 @@ function LeftMenu() {
 
             <li>
               <a href="#Artist">
-                <small class="material-symbols-outlined">groups</small>Artist
+                <small className="material-symbols-outlined">groups</small>Artist
               </a>
             </li>
 
             <li>
               <a href="#Album">
-                <small class="material-symbols-outlined">star</small>Albums
+                <small className="material-symbols-outlined">star</small>Albums
               </a>
             </li>
           </ul>
@@ -98,8 +98,8 @@ function LeftMenu() {
         <div className="footer">
           <div className="footer-box">
             <img src={Artist} alt="artist" className="bannerImg" />
-            <p>Bille Elish</p>
-            <small class="material-symbols-outlined">keyboard_arrow_right</small>
+            <p className="actor-name"><a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDY3rSxILy82YPTiTcrMyclMVUjNzMkszgAAjvcJ3w&q=billie+eilish&oq=bill&aqs=chrome.2.69i57j0i433i512j46i433i512j0i433i512j46i433i512j0i512j0i131i433j46i131i433i512j0i433i512j46i433i512.6096j0j15&sourceid=chrome&ie=UTF-8#wptab=si:AEcPFx42LNm5dK4e_8UY072haRqNAdL6HjcV5dToTAo8nT5DnE0YWr8byRHVDNC2ir2geymbpw0f2lyR6rkA4lGRDU2jJ7zx6wb7oPQTIN-SSnshrUFpPpFkKeqgvln4hnNjga8sSYeL">Bille Elish</a> </p>
+            <small className="material-symbols-outlined">keyboard_arrow_right</small>
           </div>
         </div>
       </div>
